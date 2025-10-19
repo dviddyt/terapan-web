@@ -336,7 +336,7 @@ footer {
 @media (max-width: 600px) {
     
     header {
-        min-height: 250px;
+        min-height: 220px;
     }
 
     
@@ -370,6 +370,7 @@ footer {
         display: block; 
         overflow-x: auto; 
         white-space: nowrap;
+
 
 
 
