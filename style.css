@@ -19,6 +19,53 @@ header {
 }
 
 header {
+    /* Flexbox untuk menengahkan Judul */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; /* Membuat konten (h1, p) berada di tengah vertikal */
+    align-items: center;    /* Membuat konten (h1, p) berada di tengah horizontal */
+    position: relative; 
+    min-height: 400px;
+    background-color: #2c3e50; 
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    z-index: 1; 
+}
+
+/* Penataan Logo dan Instagram (Penting!) */
+.header-top-bar {
+    position: absolute; /* Posisikan bar ini di atas header */
+    top: 20px;
+    width: 100%; /* Lebar penuh header */
+    display: flex; /* Aktifkan Flexbox di baris ini */
+    justify-content: space-between; /* Pisahkan Logo (kiri) dan Instagram (kanan) */
+    align-items: center;
+    padding: 0 20px; /* Jarak dari tepi kiri dan kanan */
+}
+
+/* Sesuaikan Logo */
+.logo-kelas {
+    width: 80px; /* Ukuran Logo yang wajar untuk laptop */
+    height: auto;
+    z-index: 3;
+    /* HAPUS position: absolute, top, left, dan bottom dari sini */
+}
+
+/* Sesuaikan Instagram Link */
+.instagram-link {
+    /* HAPUS position: absolute, top, right, dan bottom dari sini */
+    z-index: 3;
+    /* ...pertahankan gaya warna, padding, dan border-radius lainnya... */
+}
+
+/* Judul dan Teks */
+header h1 {
+    font-size: 2.8em; /* Ukuran normal untuk desktop */
+    /* ...z-index, position, dan text-shadow tetap di sini... */
+}
+
+header {
     position: relative; 
     min-height: 400px; 
     background-color: #5a0b0b; 
@@ -295,40 +342,35 @@ footer {
 
 /* --- MEDIA QUERY UNTUK TAMPILAN HANDPHONE --- */
 @media (max-width: 600px) {
-    .card-section {
-        margin: 20px 10px; 
-        padding: 20px;
-    }
     
-    .jadwal-tabel, .struktur-tabel { 
-        display: block; 
-        overflow-x: auto; 
-        white-space: nowrap; 
-    }
-    
-    .baris-jabatan {
-        max-width: 100%;
-        flex-direction: column; 
-    }
-    
-    .galeri-foto {
-        grid-template-columns: 1fr; 
-    }
-    
-    .foto-item img {
-        height: auto;
+    header {
+        min-height: 300px; /* Kurangi tinggi header di HP */
     }
 
-    header {
-        min-height: 250px; 
-    }
-    
+    /* PENTING: Kecilkan Ukuran Font Judul di HP */
     header h1 {
-        font-size: 1.5em; 
+        font-size: 1.8em; 
+        padding: 0 10px; /* Pastikan tidak terlalu mepet ke samping */
     }
     
-    .logo-kelas, .instagram-link {
-        top: 10px; 
-        width: 70px; 
+    header p {
+        font-size: 1em; /* Kecilkan deskripsi */
+        padding: 0 10px;
     }
+    
+    /* PENTING: Penyesuaian Bar Logo/Instagram */
+    .header-top-bar {
+        top: 10px; /* Naikkan sedikit */
+        padding: 0 10px;
+    }
+    
+    .logo-kelas {
+        width: 60px; /* Kecilkan logo di HP */
+    }
+    
+    .instagram-link {
+        font-size: 0.9em; /* Kecilkan tombol Instagram di HP */
+        padding: 8px 12px;
+    }
+}
 }
