@@ -380,27 +380,36 @@ footer {
     }
 
     .struktur-layout {
-        gap: 10px;
+        gap: 15px;
+        align-items: center;
     }
     
     .baris-jabatan {
-        width: 100%;
-        flex-direction: column; 
+        width: auto;
+        max-width: none !important;
+        flex-direction: row; 
+        flex-wrap: wrap;
         gap: 10px; 
+        padding: 0;
     }
     
     .baris-wali {
+        width: 170px;
         max-width: 100%%; 
         align-self: center; 
         margin-bottom: 10px;
     }
 
     .jabatan-item {
-        width: 100%; 
-        padding: 12px;
-        min-height: auto; 
+        width: 140px; 
+        flex-grow: 0; 
+        flex-shrink: 0;
+        padding: 10px;
+        min-height: 50px; 
+        font-size: 0.9em;
     }
 }
+
 
 
 
