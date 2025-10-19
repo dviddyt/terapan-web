@@ -344,33 +344,41 @@ footer {
     }
     
     header {
-        min-height: 300px;
+        min-height: 250px;
+        background-size: cover; 
+        background-position: center;
     }
 
-    
+    .header-overlay {
+        width: 100%; 
+        height: 100%;
+        background-size: cover; 
+        background-position: center; 
+    }
+
     header h1 {
-        font-size: 1.4em; 
+        font-size: 1.2em; 
         padding: 0 10px; 
     }
     
     header p {
-        font-size: 0.9em; 
+        font-size: 0.8em; 
         padding: 0 10px;
     }
     
    
     .header-top-bar {
-        top: 10px; /* Naikkan sedikit */
+        top: 10px; 
         padding: 0 10px;
     }
     
     .logo-kelas {
-        width: 50px; 
+        width: 45px; 
     }
     
     .instagram-link {
-        font-size: 0.8em; 
-        padding: 6px 10px;
+        font-size: 0.7em; 
+        padding: 5px 8px;
     }
 
 .jadwal-tabel, .struktur-tabel { 
@@ -409,6 +417,7 @@ footer {
         font-size: 0.9em;
     }
 }
+
 
 
 
