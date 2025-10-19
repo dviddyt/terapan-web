@@ -344,42 +344,58 @@ footer {
     }
     
     header {
-        min-height: 280px;
+        min-height: 180px;
+        display: block;
+        padding-top: 50px;
+        padding-bottom: 20px;
         background-size: cover; 
         background-position: center;
     }
 
     .header-overlay {
-        background-size: cover; 
+        background-size: cover;
+        min-height: 100%;
     }
     
     }
 
     header h1 {
-        font-size: 1.6em; 
-        padding: 0 10px; 
+        position: relative;
+        z-index: 2;
+        font-size: 1.2em;
+        margin-top: 0;
+        margin-bottom: 5px; 
     }
     
     header p {
-        font-size: 0.9em; 
+       position: relative;
+        z-index: 2;
+        font-size: 0.7em; /* Mengecilkan ukuran font deskripsi */
         padding: 0 10px;
     }
     
    
     .header-top-bar {
-        top: 10px; 
-        padding: 0;
+       position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 4;
     }
     
     .logo-kelas {
-        width: 50px; 
-        margin-left: 10px;
+        width: 40px; 
+        margin-left: 0px;
     }
     
     .instagram-link {
-        font-size: 0.8em; 
-        padding: 6px 10px;
-        margin-right: 10px;
+        font-size: 0.7em; 
+        padding: 5px 8px;
+        margin-right: 0px;
     }
 
 .jadwal-tabel, .struktur-tabel { 
@@ -418,6 +434,7 @@ footer {
         font-size: 0.9em;
     }
 }
+
 
 
 
