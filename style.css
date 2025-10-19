@@ -344,7 +344,7 @@ footer {
     }
     
     header {
-        min-height: 400px;
+        min-height: 280px;
         background-size: cover; 
         background-position: center;
     }
@@ -368,16 +368,18 @@ footer {
    
     .header-top-bar {
         top: 10px; 
-        padding: 0 10px;
+        padding: 0;
     }
     
     .logo-kelas {
-        width: 45px; 
+        width: 50px; 
+        margin-left: 10px;
     }
     
     .instagram-link {
-        font-size: 0.7em; 
-        padding: 5px 8px;
+        font-size: 0.8em; 
+        padding: 6px 10px;
+        margin-right: 10px;
     }
 
 .jadwal-tabel, .struktur-tabel { 
@@ -416,6 +418,7 @@ footer {
         font-size: 0.9em;
     }
 }
+
 
 
 
