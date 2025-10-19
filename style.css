@@ -336,17 +336,17 @@ footer {
 @media (max-width: 600px) {
     
     header {
-        min-height: 300px;
+        min-height: 250px;
     }
 
     
     header h1 {
-        font-size: 1.8em; 
-        padding: 0 10px; /* Pastikan tidak terlalu mepet ke samping */
+        font-size: 1.4em; 
+        padding: 0 10px; 
     }
     
     header p {
-        font-size: 1em; 
+        font-size: 0.9em; 
         padding: 0 10px;
     }
     
@@ -357,12 +357,12 @@ footer {
     }
     
     .logo-kelas {
-        width: 60px; 
+        width: 50px; 
     }
     
     .instagram-link {
-        font-size: 0.9em; 
-        padding: 8px 12px;
+        font-size: 0.8em; 
+        padding: 6px 10px;
     }
 }
 
@@ -370,6 +370,7 @@ footer {
         display: block; 
         overflow-x: auto; 
         white-space: nowrap;
+
 
 
 
