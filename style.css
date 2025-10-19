@@ -384,13 +384,13 @@ footer {
     }
     
     .baris-jabatan {
-        max-width: 100%; 
+        width: 100%;
         flex-direction: column; 
         gap: 10px; 
     }
     
     .baris-wali {
-        max-width: 70%; 
+        max-width: 100%%; 
         align-self: center; 
         margin-bottom: 10px;
     }
@@ -401,6 +401,7 @@ footer {
         min-height: auto; 
     }
 }
+
 
 
 
