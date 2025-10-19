@@ -54,7 +54,7 @@ header {
 
 /* Judul dan Teks */
 header h1 {
-    font-size: 2.4em; 
+    font-size: 2.0em; 
 }
 
 header {
@@ -100,7 +100,7 @@ header h1, header p {
 }
 
 header h1 {
-    font-size: 2.8em; 
+    font-size: 2.0em; 
     font-style: inherit;
     margin-bottom: 10px;
 }
@@ -370,5 +370,6 @@ footer {
         display: block; 
         overflow-x: auto; 
         white-space: nowrap;
+
 
 
